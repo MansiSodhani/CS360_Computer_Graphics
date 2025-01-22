@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Animated Scenery</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="AnimatedScenery.js"></script>
+  </head>
+
+  <body onload="webGLStart();">
+    <canvas
+      id="scenery"
+      style="border: none"
+      width="750"
+      height="750"
+    ></canvas>
+    <div class="change">
+        <h4>Change Draw Mode:</h4>
+        <button onclick="changeMode('point')">Point View</button>
+        <button onclick="changeMode('wireframe')">Wireframe View</button>
+        <button onclick="changeMode('solid')">Solid View</button>
+    </div>
+  </body>
+</html>
